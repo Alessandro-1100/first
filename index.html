@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Subjects Container</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
-
- <body>
-<header>
-  <nav> 
-</header
- <main>
-  <div id="subjects-container">
-    <div class="subject-box" data-subject="Subject 1"><h2>Subject 1</h2></div>
-    <div class="subject-box" data-subject="Subject 2"><h2>Subject 2</h2></div>
-    <div class="subject-box" data-subject="Subject 3"><h2>Subject 3</h2></div>
-    <div class="subject-box" data-subject="Subject 4"><h2>Subject 4</h2></div>
-    <div class="subject-box" data-subject="Subject 5"><h2>Subject 5</h2></div>
-    <div class="subject-box" data-subject="Subject 6"><h2>Subject 6</h2></div>
-    <div class="subject-box" data-subject="Subject 7"><h2>Subject 7</h2></div>
-    <div class="subject-box" data-subject="Subject 8"><h2>Subject 8</h2></div>
-    <div class="subject-box" data-subject="Subject 9"><h2>Subject 9</h2></div>
-    <div class="subject-box" data-subject="Subject 10"><h2>Subject 10</h2></div>
-  </div>
-
-  <div id="content-display">
-    <h2>Welcome</h2>
-    <p>Click on a subject to view more information here.</p>
-  </div>
-</main>
-  
+<body>
+  <h3> Risolvi il seguente problema:</h3>
+  <hr>
+    <p>Dato il triangolo ABC inscritto in una semicirconferenza il cui diametro AB misura 4, Indica con <strong>x</strong> l'ampiezza dell'angolo CAB, determina l'area del triangolo al variare di C sulla semicirconferenza e il valore di x per cui l'area misura 2 * (radice di 3)</p>
+    <img src="https://i.postimg.cc/SxV54xnc/School-triangle.png" alt="immagine del triangolo descritto nel problema" id="triangle-image">
+    <ul>
+      <li> <h2> DATI: </h2></li>
+      <li> AB = 4 = Diametro</li>
+      <li> ABC = triangolo inscritto in una circonferenza </li>
+    </ul>
+    <form onsubmit="return check()" novalidate>
+      <ul id="objectives-list">
+       <li> <h2>OBBIETTIVI:</h2></li>
+       <li><label for="funzione-area"> A(x) =</label><input type="text" required id="funzione-area"><div id="e1" class="emg"></div> </li>
+       <li> se A = 2√3, x=<input type="number" required id="grades-input"></li><div id="e2" class="emg"></div>
+      </ul>
+    
+      <button id="check-button">Controlla</button>
+    </form>
+    <button id="resolver-button">dammi la soluzione</button>
+  <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
