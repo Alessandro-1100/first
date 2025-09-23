@@ -16,3 +16,19 @@ body {
 ul {
     list-style-type: none
 }
+
+#funzione-area, #grades-input {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 50%;
+    background-color: white;
+}
+
+#success-or-retry {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+}
